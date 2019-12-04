@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorControlNormal">#CFD5DA</item>
+        <item name="colorControlActivated">#1565c0</item>
+    </style>
+
+    <style name="ClickableStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="TextHeader">
+        <item name="android:textColor">#191C1F</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+   <style name="TextDescription">
+        <item name="android:textColor">#8B959E</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextInput">
+        <item name="android:textColor">#191C1F</item>
+        <item name="android:textSize">20sp</item>
+
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="error_message_no_internet">No internet. Please turn on internet connection.</string>
+    <string name="error_message_no_data">No data. Something went wrong.</string>
+</resources>

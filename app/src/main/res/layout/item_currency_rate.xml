@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ClickableStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/currencyFlagIv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:src="@drawable/eur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currencyCodeTv"
+        style="@style/TextHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:text="EUR"
+        app:layout_constraintStart_toEndOf="@+id/currencyFlagIv"
+        app:layout_constraintTop_toTopOf="@+id/currencyFlagIv" />
+
+    <TextView
+        android:id="@+id/currencyNameTv"
+        style="@style/TextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Euro"
+        app:layout_constraintBottom_toBottomOf="@+id/currencyFlagIv"
+        app:layout_constraintStart_toEndOf="@+id/currencyFlagIv" />
+
+    <EditText
+        app:layout_constraintWidth_max="140dp"
+        android:id="@+id/currencyValueEt"
+        style="@style/TextInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="false"
+        android:digits="1234567890."
+        android:ems="10"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:lines="1"
+        android:maxLength="12"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/currencyNameTv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
