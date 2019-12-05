@@ -1,9 +1,7 @@
-package com.alexandrpershin.currencyconverter.di.module
+package com.alexandrpershin.currencyconverter.mainactivity
 
 import android.util.Log
 import com.alexandrpershin.currencyconverter.data.Result
-import com.alexandrpershin.currencyconverter.mainactivity.MainActivityPresenter
-import com.alexandrpershin.currencyconverter.mainactivity.MainActivityView
 import com.alexandrpershin.currencyconverter.repository.CurrencyRateRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -16,7 +14,8 @@ class MainActivityPresenterImpl(
     private val repository: CurrencyRateRepository
 ) : MainActivityPresenter {
 
-    private var baseCurrency: String = DEFAULT_CURRENCY
+    private var baseCurrency: String =
+        DEFAULT_CURRENCY
 
     private var disposable: CompositeDisposable? = CompositeDisposable()
 

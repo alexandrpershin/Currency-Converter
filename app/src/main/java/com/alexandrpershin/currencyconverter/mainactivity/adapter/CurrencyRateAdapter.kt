@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.alexandrpershin.currencyconverter.R
 import com.alexandrpershin.currencyconverter.`interface`.TextChangeListener
-import com.alexandrpershin.currencyconverter.di.module.MainActivityPresenterImpl
+import com.alexandrpershin.currencyconverter.mainactivity.MainActivityPresenterImpl
 import com.alexandrpershin.currencyconverter.model.Currency
 import com.alexandrpershin.currencyconverter.util.round
 import com.bumptech.glide.Glide
